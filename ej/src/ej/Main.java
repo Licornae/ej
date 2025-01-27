@@ -7,25 +7,29 @@ import java.io.InputStreamReader;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Indiquez la météo (soleil, nuage ou pluie) : ");
+		System.out.println("Indiquez un film je vous donne son genre : ");
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 	        String reponse;
 			reponse = reader.readLine();
-	        commenteLaMeteo(reponse);
+			System.out.println(categorieDeFilm(reponse));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
         
 	}
 	
-	public static void commenteLaMeteo(final String meteo) {
-		switch(meteo) {
-		case "soleil" -> System.out.println("Beau temps");
-		case "nuage" -> System.out.println("Couvert");
-		case "pluie" -> System.out.println("Mauvais temps");
-		default -> System.out.println("Je ne sais pas.");
+	public static String categorieDeFilm(final String film) {
+		var resultat = switch(film) {
+		case "Star Wars" -> "Science fiction";
+		case "Blanche neige", "La petite sirène" -> "Disney";
+		case "Indiana Jones" -> {
+			String categorie = "Aventure";
+			yield categorie;
 		}
+		default -> "Je ne sais pas.";
+		};
+		return resultat;
 	}
 	
 
