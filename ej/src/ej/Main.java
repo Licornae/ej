@@ -1,27 +1,19 @@
 package ej;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Main {
-
-	public static void main(String[] args) {
+	
+	public static void main(String[] args) {  //Compter le nombre de 0 présents dans le tableau
 		
-		System.out.println("Affichage des 20 langages informatiques les plus populaires en avril 2024"
-				+ " du plus utilisé au moins utilisé.\n");
+		int[] unTableauDEntier = {26, 0, 1985, 0, 12, 11, 1955, 0, 0};
+		int cpt = 0;
 		
-		List<String> nomsDesLangages = Arrays.asList("Python", "C", "C++",
-				"Java","C#", "JavaScript","Go", "Visual Basic",
-				"SQL", "Fortran", "Delphi/Object Pascal",
-				"Assembly language", "Ruby", "Swift", "Scratch",
-				"MATLAB", "PHP", "Kotlin", "Rust", "R"
-				);
-		
-		for(String nomDUnLangage : nomsDesLangages) {
-			String resultat = nomDUnLangage.toUpperCase();
-			System.out.println(resultat);
+		for(int i = 0; i <= unTableauDEntier.length -1; i++) {
+			if (unTableauDEntier[i] == 0) {	
+				cpt ++;
+			}		
 		}
-		
+
+		System.out.println(cpt);
 		
 	}
 	
