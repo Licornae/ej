@@ -3,12 +3,11 @@ package ej;
 public class Main {
 
 	public static void main(String[] args) {
-		int somme = Main.addition(4, 4);
-		System.out.println(somme);
+		affichage("Marty");
 	}
 	
-	public static int addition(final int entier1, final int entier2) {
-		return entier1 + entier2;
+	public static void affichage(String text){
+		System.out.println("Bonjour " + text);
 	}
 	
 
