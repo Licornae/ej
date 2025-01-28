@@ -2,22 +2,26 @@ package ej;
 
 public class Bloc {
 	
-	private String description;
+	private int longueur;
+	private int largeur;
+	private int hauteur;
 	
-	Bloc(final String description){
-		this.description = description;
+	public Bloc(int longueur, int largeur, int hauteur) {
+		this.longueur = longueur;
+		this.largeur = largeur;
+		this.hauteur = hauteur;
 	}
 	
-	public void afficherDescription() {
-		System.out.println(this.description);
+	public int getLongueur() {
+		return longueur;
 	}
 	
-	public String getDescription() {
-		return description;
+	public int getLargeur() {
+		return largeur;
 	}
 	
-	public void setDescription(String description) {
-		this.description = description;
+	public int getHauteur() {
+		return hauteur;
 	}
 
 }
