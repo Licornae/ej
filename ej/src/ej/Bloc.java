@@ -2,9 +2,9 @@ package ej;
 
 public class Bloc {
 	
-	private int longueur;
-	private int largeur;
-	private int hauteur;
+	protected int longueur;
+	protected int largeur;
+	protected int hauteur;
 	
 	public Bloc(int longueur, int largeur, int hauteur) {
 		this.longueur = longueur;
@@ -12,16 +12,8 @@ public class Bloc {
 		this.hauteur = hauteur;
 	}
 	
-	public int getLongueur() {
-		return longueur;
-	}
-	
-	public int getLargeur() {
-		return largeur;
-	}
-	
-	public int getHauteur() {
-		return hauteur;
+	public void afficheUneDescription() {
+		System.out.println("Je suis un bloc !");
 	}
 
 }
