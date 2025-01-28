@@ -18,9 +18,10 @@ public class Mur extends Bloc {
 	}
 	
 	@Override
-	public void afficheUneDescription() {
+	public void afficherDescription() {
 		System.out.println("Je suis un mur !");
-	}
+
+}
 	
 	public boolean estTraversable() {
 		return !porteur;

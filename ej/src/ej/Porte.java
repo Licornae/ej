@@ -12,5 +12,10 @@ public class Porte extends Bloc {
 	public boolean estVerrouillee() { //Si la caractéristique verrouille est vraie, alors la méthode estVerrouille doit renvoyer vrai, sinon elle doit renvoyer faux.
 		return verrouillee;
 	}
+	
+	@Override
+	public void afficherDescription() {
+		System.out.println("Je suis une porte !");
+	}
 
 }

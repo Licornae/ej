@@ -1,6 +1,6 @@
 package ej;
 
-public abstract class Bloc {
+public abstract class Bloc implements IBloc {
 	
 	protected int longueur;
 	protected int largeur;
@@ -12,8 +12,5 @@ public abstract class Bloc {
 		this.hauteur = hauteur;
 	}
 	
-	public void afficheUneDescription() {
-		System.out.println("Je suis un bloc !");
-	}
 
 }

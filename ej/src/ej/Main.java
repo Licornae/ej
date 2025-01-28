@@ -3,10 +3,11 @@ package ej;
 public class Main {
 
 	public static void main(String[] args) {
-		Bloc unBlocMur = new Mur(10,10,5,true);
-		//unBlocMur.afficherBloc();
+		IBloc unBlocMur = new Mur(10,10,5,true);
+		IBloc unBlocPorte = new Porte(1, 1, 1, false);
 		
-		unBlocMur.afficheUneDescription();
+		unBlocMur.afficherDescription();
+		unBlocPorte.afficherDescription();
 		
 	}
 
